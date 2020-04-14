@@ -1,6 +1,6 @@
 from flask import Flask
-from .views.user import user_page
-from .extension import db
+from first_flask.views.user import user_page
+from first_flask.extension import db
 
 app = Flask('first_flask')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://tianji:tianji@127.0.0.1/python_admin'

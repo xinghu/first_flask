@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, session, redirect, request, url_for, flash
-from ..models import User
+from first_flask.models import User
 
 user_page = Blueprint('user_page', __name__)
 
@@ -26,7 +26,9 @@ def login():
 
         if user and user.password == pwd:
             session['user_id'] = user.id
-            return redirect(url_for('user_page.users'))
+            # return redirect(url_for('user_page.users'))
+            return '1'
         else:
             flash('登陆失败')
-            return render_template('user/login.html')
+            # return render_template('user/login.html')
+            return '0'
