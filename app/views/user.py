@@ -1,5 +1,8 @@
+# encoding: utf8
+
 from flask import Blueprint, render_template, session, redirect, request, url_for, flash
-from first_flask.models import User
+from app.models import User
+
 
 user_page = Blueprint('user_page', __name__)
 

@@ -1,4 +1,4 @@
-from first_flask.extension import db
+from app.extension import db
 
 
 class User(db.Model):

@@ -1,8 +1,8 @@
 from flask import Flask
-from first_flask.views.user import user_page
-from first_flask.extension import db
+from app.views.user import user_page
+from app.extension import db
 
-app = Flask('first_flask')
+app = Flask('app')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://tianji:tianji@127.0.0.1/python_admin'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
