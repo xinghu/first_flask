@@ -1,0 +1,23 @@
+<html>
+<head></head>
+<body>
+
+<h1>User List</h1>
+
+<table>
+    <tr>
+        <td>username</td>
+        <td>email</td>
+        <td>操作</td>
+    </tr>
+    {% for user in users %}
+    <tr>
+        <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
+        <td><a href="{{url_for('user_page.edit', id=user.id)}}">修改</a></td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
