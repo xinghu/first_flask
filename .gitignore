@@ -1,1 +1,4 @@
-.idead/
+.idea/
+venv/
+__pycache__/
+
